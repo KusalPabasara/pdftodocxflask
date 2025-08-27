@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KUSAL PDF to DOCX Converter</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cyber-grid"></div>
+    <div class="scan-line"></div>
+    
+    <div class="container">
+        <div class="glitch-wrapper">
+            <header>
+                <h1 class="glitch" data-text="KUSAL PDF CONVERTER">KUSAL PDF CONVERTER</h1>
+                <p class="subtitle">[ ADVANCED DOCUMENT TRANSFORMATION SYSTEM ]</p>
+                <div class="status-bar">
+                    <span class="status-item">STATUS: <span class="online">ONLINE</span></span>
+                    <span class="status-item">ENCRYPTION: <span class="active">ACTIVE</span></span>
+                    <span class="status-item">VERSION: <span>4.0.1</span></span>
+                </div>
+            </header>
+        </div>
+
+        <main>
+            <div class="upload-section">
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-animation">
+                        <svg class="upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                    </div>
+                    <h3>[ DRAG FILE TO UPLOAD ]</h3>
+                    <p class="upload-text">MAXIMUM PAYLOAD: 50MB</p>
+                    <input type="file" id="fileInput" accept=".pdf" hidden>
+                    <button class="browse-btn cyber-btn" id="browseBtn">
+                        <span>BROWSE FILES</span>
+                    </button>
+                </div>
+
+                <div class="file-info" id="fileInfo" style="display: none;">
+                    <div class="file-details">
+                        <div class="file-icon-wrapper">
+                            <svg class="file-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                            </svg>
+                        </div>
+                        <div class="file-meta">
+                            <p class="file-name" id="fileName"></p>
+                            <p class="file-size" id="fileSize"></p>
+                        </div>
+                        <button class="remove-btn" id="removeBtn">
+                            <span>×</span>
+                        </button>
+                    </div>
+                </div>
+
+                <button class="convert-btn cyber-btn" id="convertBtn" disabled>
+                    <span class="btn-text">[ INITIALIZE CONVERSION ]</span>
+                    <div class="spinner" style="display: none;"></div>
+                </button>
+
+                <div class="progress-bar" id="progressBar" style="display: none;">
+                    <div class="progress-track">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <div class="progress-text">PROCESSING...</div>
+                </div>
+
+                <div class="message" id="message"></div>
+            </div>
+
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <h4>QUANTUM SPEED</h4>
+                    <p>Neural-enhanced processing</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🔐</div>
+                    <h4>ENCRYPTED</h4>
+                    <p>Military-grade security</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🎯</div>
+                    <h4>PRECISION</h4>
+                    <p>99.9% accuracy rate</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <p class="copyright">© 2025 KUSAL Systems. All Rights Reserved.</p>
+                <p class="footer-info">Protected by Advanced Encryption Protocols</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
